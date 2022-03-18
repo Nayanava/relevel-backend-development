@@ -1,0 +1,5 @@
+const fs = require('fs')
+console.log('Starting application')
+const text = fs.readFileSync("./hello_node.txt")
+console.log(new Buffer.from(text).toString())
+console.log("Stopping application")

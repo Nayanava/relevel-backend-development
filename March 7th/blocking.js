@@ -1,0 +1,5 @@
+const fs = require('fs')
+console.log("starting")
+const text = fs.readFileSync("./contents.json")
+console.log(new Buffer.from(text).toString())
+console.log("stopping")

@@ -1,0 +1,15 @@
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   background: green;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 120%;
+
+}
+
+h1.main {
+   color: white;
+}
