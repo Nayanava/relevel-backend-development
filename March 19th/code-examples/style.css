@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(77, 154, 77);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+}
+
+h1.header {
+    color: aliceblue;
+}
