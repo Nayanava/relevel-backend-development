@@ -125,8 +125,8 @@ console.log(aboutMe[3][0]);
 
 const array = [
         ['X', '0', 'X'], //0
-        ['X', '0', '0'],
-        ['0', 'X', 'X']
+        ['X', '0', '0'], //1
+        ['0', 'X', 'X'] //2
     ];
 
 //0, 0 - 0, 1 - 0, 2
@@ -215,3 +215,23 @@ Homework:
 2. Declare functions inside the objects and then call them and print something
 */
 
+/*
+N - there are two prime numbers whose sum is N
+we already know how to check if a number is prime or not.
+
+for(i = 2; i < N-1; i++) {
+    if(isPrime(i) && isPrime(N-i)) {
+        console.log(i, n-i);
+        return;
+    }
+}
+
+function isPrime(number) {
+    for(i = 2; i * i <= number; i++) {
+        if(number % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+*/
