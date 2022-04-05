@@ -145,9 +145,10 @@ HW: Using Constructor
 3. create different real objects by invoking the constructor
 4. use the three different approaches to loop through all the properties in the object.
 
-HW: Object.Create -> prototyping
+HW: Object.Create() -> prototyping
 1. don't override certain properties -> see how it behaves
 2. don't override certain functions -> see how it behaves
 3. Override certain functions and then see what happens after that
 
 */
+
