@@ -247,3 +247,12 @@ async function getOrderDetailsAsync(order) {
 }
 
 getOrderDetailsAsync(bookOrder).then(orderDetails => console.log(orderDetails)).catch(err => console.log(err));
+
+//We need to find the maximum from a very large set of numbers present in the disk
+//We cannot load all of the files at one shot from the disk - use the skip and limit to mimic
+//After loading every chunk, find the maximum seen so far and finally log the result. 
+//maximum numbers in disk - 400 and everytime we can read only 20 numbers from the disk
+// Ex : [10, 20, 30, 40, 10, 11, 12, 15, 18, 20].
+// limit - 5 numbers
+// output: 40
+//use promise chaining as well as async/await
