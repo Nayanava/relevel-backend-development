@@ -83,9 +83,9 @@
 
 
 //
-//                        onFulfilled
-//              pending  /
-//  promise     --------> 
+//                        onFulfilled                      onFulfilled
+//              pending  /           \        pending     /
+//  promise     -------->             promise -----------> 
 //                       \
 //                        onRejected
 //
@@ -241,7 +241,7 @@ async function getOrderDetailsAsync(order) {
     orderDetails.productName = productInfo.name,
     orderDetails.description = productInfo.description;
     console.log(orderDetails);
-    const shippingInfo = await fetchInfoFromServiceAsync('shippingId', 'shipping');
+    //const shippingInfo = await fetchInfoFromServiceAsync('shippingId', 'shipping');
     
     return orderDetails;
 }
@@ -256,3 +256,22 @@ getOrderDetailsAsync(bookOrder).then(orderDetails => console.log(orderDetails)).
 // limit - 5 numbers
 // output: 40
 //use promise chaining as well as async/await
+
+const allPromises = async () => {
+    const promises = [];
+    promises.push(fetchInfoFromService('P112233', 'product'));
+    promises.push(fetchInfoFromService('U20170510100010', 'user'));
+    return Promise.all(promises);
+}
+
+async function allPromisesAsync() {
+    const results = await allPromises();
+    for(const result of results) {
+        console.log(result);
+    }
+    return 'proceesed';
+}
+
+allPromisesAsync().then((result) => {
+    console.log(result)
+}).catch(err => console.log(err));
