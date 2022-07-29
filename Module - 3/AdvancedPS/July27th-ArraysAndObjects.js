@@ -219,3 +219,13 @@ const swap = (arr, left, right) => {
 const negToEnd = [-5, 3, -4, 88, -9, -10, 21, 5, 6];
 shiftNegativesToRight(negToEnd);
 console.log(negToEnd);
+
+
+/*                                      
+                                         (not the destination)
+                      __________________/  
+                    /                   \ (not the destination)
+home --------------  ---(not the destination)
+                    \
+                     (destination)
+*/
