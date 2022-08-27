@@ -1,0 +1,8 @@
+Cache Eviction Policies
+1. the one that came in first, will be the first (FIFO)
+2. the ones with higher priority - priority based eviction.
+3. size based eviction policy - based on the size of the data
+4. Least recently used - will be evicted first - LRU
+5. Least Frequently used - the one with the least frequency of use is evicted first
+    if there multiple keys in contention, 
+        the one which was least recently used will be deleted first
