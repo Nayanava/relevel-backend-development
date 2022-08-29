@@ -1,0 +1,7 @@
+1. A LIFO based Data structure where LIFO stands for
+    Last in first out.
+2. Stack datastructures provide us with three basic functionalities
+    2.1) push() - pushes to the top of the stack.
+    2.2) pop() - pops the first element from the top of the stack.
+    2.3) top()/peek() - returns the value on the top of the stack.
+        **NOTE- it doesn't pop the element from the top.
