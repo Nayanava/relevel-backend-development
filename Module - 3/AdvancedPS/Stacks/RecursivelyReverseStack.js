@@ -1,4 +1,4 @@
-const Stack = require("./stack");
+const Stack = require("../LinkedLists/stack");
 /*
 Reverse a stack recursively.
 Using the functionalities provided by the stack.
@@ -26,3 +26,8 @@ console.log(st);
 const resultStack = new Stack();
 reverseAStack(st, resultStack);
 console.log(resultStack);
+
+values = inputs.map(input => {
+    key = input.key;
+    return {...input}
+})
