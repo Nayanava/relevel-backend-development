@@ -38,7 +38,7 @@ class Deque extends Queue {
     }
 
     getRear = function() {
-        this.isEmpty() ? null : this.rear.val;
+        return this.isEmpty() ? null : this.rear.val;
     } 
 }
 
