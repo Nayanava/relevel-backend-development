@@ -19,6 +19,9 @@ class Queue {
         return this.size === this.maxCapacity;
     }
 
+    length = function () {
+        return this.size;
+    }
     // same as insertAtEnd of linkedList.
     enqueue = function (val) {
         if(this.isFull()) {
@@ -52,7 +55,7 @@ class Queue {
             deletedNode.next = deletedNode.prev = null;
         }
         this.size--;
-        return deletedNode;
+        return deletedNode.val;
     }
 
     getFront = function() {
