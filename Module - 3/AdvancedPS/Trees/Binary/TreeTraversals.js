@@ -18,5 +18,5 @@ BinaryTree.preorderTraversal(node);
 console.log();
 BinaryTree.inorderTraversal(node);
 console.log();
-
+BinaryTree.levelOrderTraversal(node);
 //Homework - implementing postorder and level order traversal.

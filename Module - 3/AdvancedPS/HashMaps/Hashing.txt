@@ -1,0 +1,29 @@
+insert(45), insert(66), insert(55), delete(66), insert(65)
+
+0 - 9
+
+0 - ___
+1 - ___
+2 - ___
+3 - ___
+4 - ___
+5 - 45
+6 - 66
+7 - 55
+
+h(k) % s
+(h(k)+1)%s
+(h(k) + 2) % s
+
+h(k) % 16 === h(k) % 32 ??
+17 % 16 = 1
+17 % 32 = 17
+
+if I increase the size of my hashmap, will I be able to correctly fetch the index position
+that was allotted to keys when the size was half?? - no
+
+we would actually recalculate the index positions of every key in the older hashMap 
+and move them to the new index in the current hashMap. - Rehashing of the keys.
+
+
+total 10 values, 12
