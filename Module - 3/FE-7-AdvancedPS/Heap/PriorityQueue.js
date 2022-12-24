@@ -102,6 +102,9 @@ class PriorityQueue {
             process.stdout.write(this.heap[i] + " ");
         }
     }
+    size = function() {
+        return this.heap.length;
+    }
 }
 
 module.exports = PriorityQueue;
