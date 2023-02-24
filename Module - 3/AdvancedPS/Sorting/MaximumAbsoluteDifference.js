@@ -17,3 +17,4 @@ const maxAbsoluteDifference = (arr, k) => {
 }
 
 console.log(maxAbsoluteDifference([18,4,15,12,10], 2));
+
